@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <title>ICE Components</title>
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- All CSS -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="css/easy-responsive-tabs.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-head">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+            
+                  <a class="hdr-logo" href="index.html"><img src="images/hdr-logo.png" alt=""></a>
+                  <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="stick"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="stick"></span>
+                    </button>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="menu-item-has-children"><a href="current-sensors.html">Products</a>
+                            <ul class="sub-menu">
+                                <li><a href="#url">Product 1</a></li>
+                                <li>
+                                    <a href="#url">Product 2</a>
+                                </li>
+                                
+                        </ul></li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="storage-conditions.html">Resources</a>
+                            <ul class="sub-menu">
+                                    <li><a href="#url">Resource 1</a></li>
+                                    <li>
+                                        <a href="news.html">Resource 2</a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                   
+                  </div>
+                  <div class="nav-rgt">
+                    <a href="javascript:void(0)" class="srch-icon"><img src="images/srch-icon.svg" alt=""></a>
+                    <div class="drop-form-wrap">
+                        <form>
+                            <div class="drop-form">
+                                <input type="text" placeholder="Search">
+                                <input type="submit">
+                            </div>
+                        </form>
+                    </div>
+                   </div>
+                
+              </nav>
+
+        </div>
+
+
+        <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+    </header>
+
+    <div class="banner-sec inner-banner">
+        <img src="images/banner-uppr-shape.png" alt="" class="banner-uppr-shape">
+        <img src="images/banner-lwr-shape.png" alt="" class="banner-lwr-shape">
+        <img src="images/banner-rgt-shape.png" alt="" class="banner-rgt-shape">
+        <div class="container">
+            <div class="banner-wrap inner-banner-wrap frc-banner">
+                <div class="row inner-banner-row">
+                    <div class="col-md-6 inner-banner-col-left">
+                        <h1 class="hOne mb-0">Failure Rate Calculation</h1>
+                    </div>
+                    <div class="col-md-6 inner-banner-col-right">
+                        <figure class="inner-banner-img">
+                            <img src="images/failure-rate-calculation-banner-img.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="series-sec cmn-gap">
+        <div class="container">
+            <div class="row frc-row">
+                <div class="col-lg-6 frc-col-lft">
+                    <p>The prediction of the steady-state failure rate for a device is based on a generic steady-state failure rate for the type of device per Telcordia Technologies Special Report SR-332 Issue 3. This generic value is then modified for quality, stress, and temperature. The mean black box steady-state failure rate, λBBi , is:</p>
+                    <p class="text-bold hFour">λ<sub>BBi</sub> = λ<sub>Gi</sub>π<sub>Qi</sub>π<sub>Si</sub>π<sub>Ti</sub></p>
+                    <a href="#url" class="cmn-btn download-btn">Download FRC Document <i><img src="images/download-icon.svg" alt=""></i></a>
+                </div>
+                <div class="col-lg-6 frc-col-rght">
+                    <p class="frc_heading">Where:</p>
+                    <p><span class="text-bold">λ<sub>Gi</sub> =</span> Mean generic steady-state failure rate for device i (Section 8).</p>
+                    <p><span class="text-bold">π<sub>Qi</sub> =</span> 1.0; Quality Factor for device i (Section 9.3).</p>
+                    <p><span class="text-bold">π<sub>Si</sub> =</span> 1.0; Electrical Stress Factor for device i (Section 9.2) based on the percent electrical stress.</p>
+                    <p>If stress is unknown, use 1, which assumes 50% electrical stress.</p>
+                    <p><span class="text-bold">π<sub>Ti</sub> =</span> 2.0; Temperature Factor for device i at 85°C; Ea = 0.15eV (Section 9.1).</p>
+                </div>
+            </div>
+
+          
+        </div>
+    </div>
+
+    <div class="frc_table_sec cmn-gap pt-0">
+        <div class="container">
+
+            <div class="table-responsive shelf-life-wrapper frc_table_wrapper">
+                <table class="table frc_table">
+                    <thead>
+                        <tr>
+                            <th style="width: 54%;">Hall-Effect Current Sensors</th>
+                            <th style="width: 23%;">Steady-State FITs (Failures/Billion Hours)</th>
+                            <th style="width: 23%;">MTBF* <br> (Hours)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ISB Series (Connector/Lead-Wire)</td>
+                            <td>94.2</td>
+                            <td>10,618,736</td>
+                        </tr>
+                        <tr>
+                            <td>ISC Series (Connector/Lead-Wire)</td>
+                            <td>94.2</td>
+                            <td>10,618,736</td>
+                        </tr>
+                        <tr>
+                            <td>ISE Series (PCB Mounting)</td>
+                            <td>94.2</td>
+                            <td>10,618,736</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+                <div class="table-responsive shelf-life-wrapper frc_table_wrapper">
+                    <table class="table frc_table">
+                        <thead>
+                            <tr>
+                                <th style="width: 54%;">Magnetic Components</th>
+                                <th style="width: 23%;">Steady-State FITs (Failures/Billion Hours)</th>
+                                <th style="width: 23%;">MTBF* <br> (Hours)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gate Drive Transformers (GT and XT Series)</td>
+                                <td>19.7</td>
+                                <td>50,731,486</td>
+                            </tr>
+                            <tr>
+                                <td>Current Sense Transformers (CT Series)</td>
+                                <td>6.0</td>
+                                <td>165,722,855</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Inductors (Class D and High Current Power Inductors)</td>
+                                <td>1.8</td>
+                                <td>552,409,518</td>
+                            </tr>
+                            <tr>
+                                <td>High Current Inductors (LP Series and Non-Standard Inductors)</td>
+                                <td>1.8</td>
+                                <td>552,409,518</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class="frc_des-list_wrapper">
+                    <ul class="des-list">
+                        <li>MTBF: Calculated from FITs (MTBF=10^9 (hours) / FITs)</li>
+                        <li>Hall-Effect Current Sensors FITs : πTi = 1.0; @ 40°C; (Section 9.1)</li>
+                        <li>Magnetic Components FITs : πTi = 2.0; @ 85°C; Ea = 0.15eV</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+
+    <footer class="main_footer">
+
+        <div class="footer_bg_shape">
+            <img src="images/footer-bg-shape.png" alt="">
+        </div>
+    
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto footer_col_1">
+                        <div class="footer_box">
+                            <a href="index.html" class="footer_logo"><img src="images/footer-Logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-auto footer_col_2">
+                        <div class="footer_box">
+                            <p class="footer_heading">Quick Links</p>
+                            <ul class="footer_menu_list">
+                                <li>
+                                    <a href="current-sense-transformer.html">Products</a>
+                                </li>
+                                <li class="footer-link-active">
+                                    <a href="storage-conditions.html">Resources</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto footer_col_3">
+                        <div class="footer_box">
+                            <p class="footer_heading">Legal</p>
+                            <ul class="footer_menu_list">
+                                <li>
+                                    <a href="#url">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#url">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#url">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto footer_col_4">
+                        <div class="footer_box">
+                            <p class="footer_heading">Contact Details</p>
+                            <ul class="footer_menu_list f_menu_contact">
+                                <li>
+                                    <i><img src="images/footer-location-icon.svg" alt=""></i>
+                                    <span>1165 Allgood Road, Suite 20 | Marietta, GA | 30062</span>
+                                </li>
+                                <li>
+                                    <i><img src="images/footer-phone-icon.svg" alt=""></i>
+                                    <a href="tel:678.560.9172">678.560.9172</a>
+                                </li>
+                                <li>
+                                    <i><img src="images/footer-land-icon.svg" alt=""></i>
+                                    <span>678.560.9304</span>
+                                </li>
+                                <li>
+                                    <i><img src="images/footer-envelope-icon.svg" alt=""></i>
+                                    <a href="mailto:sales@icecomp.com">sales@icecomp.com</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_bottom_inner">
+                    <p>© 2023 <a href="index.html">ICE Components</a>. All Rights Reserved</p>
+                    <ul class="footer_social_list">
+                        <li>
+                            <a href="#url"><img src="images/footer-facebook-icon.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#url"><img src="images/footer-linkedin-icon.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <span id="scroll" style="display: none;"><i class="fas fa-angle-up"></i></span>
+
+
+
+    
+    <!-- Jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+<script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
