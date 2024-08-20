@@ -1,0 +1,266 @@
+
+ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    /* float: left; */
+}
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+.resp-tab-content {
+    display: none;
+}
+.resp-tab-active {
+    background: linear-gradient(
+89.95deg, #EC8CA3 4.09%, #A0B7DE 37.91%) !important;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%) !important;
+    color: #fff;
+}
+.resp-tab-active img{
+    filter: brightness(1000%);
+}
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+.resp-tab-content {
+    border: 1px solid rgba(114, 109, 131, 0.21);
+    margin-bottom: 30px;
+}
+h2.resp-accordion {
+    border: 1px solid rgba(114, 109, 131, 0.21);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 15px 7px rgba(53, 41, 85, 0.1);
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+}
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    box-shadow: none;
+}
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    /* width: 30%; */
+    width: 535px;
+}
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    cursor: pointer;
+    float: none;
+    padding: 10px 42px;
+    margin-bottom: 29px !important;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border: 1px solid rgba(114, 109, 131, 0.21);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 15px 7px rgba(53, 41, 85, 0.1);
+}
+.resp-vtabs .resp-tabs-list li span{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    float: left;
+    width: calc(100% - 535px);
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+    padding-left: 100px;
+}
+.resp-tab-content h3 {
+    color: #4B6282;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: -0.005em;
+}
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+.resp-vtabs li.resp-tab-active { 
+    position: relative;
+    z-index: 1;
+    border: 0;
+    box-shadow: 0px 1px 15px 7px rgb(255 255 255 / 0%) !important;
+}
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+
+h2.resp-tab-active {
+    border: none;
+}
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1;/* !important;*/
+}
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+.resp-tab-content-active {
+    display: block;
+}
+.tab_sec{
+    padding-top: 86.5px;
+    padding-bottom: 72.5px;
+}
+.tab_sec .sec_header{
+    text-align: left;
+    padding-bottom: 59px;
+    margin-left: 0;
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+
+@media (max-width: 1399px){
+    .resp-vtabs ul.resp-tabs-list{
+        width: 450px;
+    }
+    .resp-vtabs .resp-tabs-container{
+        width: calc(100% - 450px);
+        padding-left: 50px;
+    }
+    .resp-tab-content h3{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .resp-vtabs .resp-tabs-list li span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}
+@media (max-width: 991px){
+    .resp-vtabs ul.resp-tabs-list{
+        width: 250px;
+    }
+    .resp-vtabs .resp-tabs-container{
+        width: calc(100% - 250px);
+        padding-left: 20px;
+    }
+    .resp-tab-content h3{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .resp-vtabs .resp-tabs-list li{
+        padding: 15px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .resp-tab-active {
+        box-shadow: none !important;
+    }
+    h2.resp-accordion{
+        display: flex !important;
+        justify-content: space-between;
+    }
+    h2.resp-accordion span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        font-family: 'Comfortaa';
+        font-weight: 400;
+    }
+    /* h2.resp-accordion:first-child{
+        border-top: 1px solid #C1C1C1;
+    } */
+    .resp-tab-content h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .resp-tab-content p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .resp-arrow{
+        display: none !important;
+    }
+    ul.resp-tabs-list {
+        display: none;
+    }
+    
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+        padding-left: 0;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+        padding: 20px;
+    }
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+    .resp-vtabs .resp-tabs-list li{
+        box-shadow: none;
+    }
+}
