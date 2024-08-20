@@ -1,0 +1,1001 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/brands.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/regular.min.css">
+  <link rel="stylesheet" href="css/solid.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/slick-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="style.css">
+  <title>GSMFreelancer</title>
+</head>
+<body class="c-app">
+  <!--sidebar-->
+  <div class="c-sidebar c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+
+    <button class="db_close_btn">
+      <img src="images/cross-blue.svg" alt="">
+    </button>
+
+    <a href="interviewer-dashboard.html" class="dashboard-logo">
+      <img src="images/register-logo.png" alt="">
+    </a>
+    
+    <ul class="c-sidebar-nav">
+      <li>
+        <a class="c-sidebar-nav-link" href="#url">
+          <figure><img src="images/d1.svg" alt=""/></figure> 
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#url">
+          <figure><img src="images/d2.svg" alt=""/></figure> 
+          <span>Profile</span>
+        </a>
+      </li>
+      <li class="current-page-item">
+        <a href="#url">
+          <figure><img src="images/d3.svg" alt=""/></figure> 
+          <span>record a question</span>
+        </a>
+      </li>
+      <li>
+        <a href="#url">
+          <figure><img src="images/d4.svg" alt=""/></figure> 
+          <span>recorded questions list</span>
+        </a>
+      </li>
+      <li>
+        <a href="#url">
+          <figure><img src="images/d5.svg" alt=""/></figure> 
+          <span>Training Video</span>
+        </a>
+      </li>
+      <li>
+        <a href="#url">
+          <figure><img src="images/d6.svg" alt=""/></figure> 
+          <span>Payment/My wallet</span>
+        </a>
+      </li>
+      <li>
+        <a href="#url">
+          <figure><img src="images/d7.svg" alt=""/></figure> 
+          <span>Order history </span>
+        </a>
+      </li>
+      <li>
+        <a href="#url">
+          <figure><img src="images/d8.svg" alt=""/></figure> 
+          <span>login and security</span>
+        </a>
+      </li>
+    </ul>
+    <div class="c-btm">
+        <a href="#" class="logout"><span><img src="images/d9.svg" alt=""/></span> Logout</a> 
+    </div>
+  </div>
+
+  <!--wrapper-->
+  <div class="c-wrapper c-fixed-components c-wrap">
+    <header class="c-header">
+      <button class="c-header-toggler c-class-toggler d-lg-none" type="button" data-target="#sidebar"
+        data-class="c-sidebar-show">
+        <svg class="c-icon c-icon-lg" viewBox="0 0 512 512">
+          <rect width="352" height="32" x="80" y="96" fill="#0e47d5" stroke="none"></rect>
+          <rect width="352" height="32" x="80" y="240" fill="#0e47d5" stroke="none"></rect>
+          <rect width="352" height="32" x="80" y="384" fill="#0e47d5" stroke="none"></rect>
+        </svg>
+      </button>
+      <a href="#url" class="hdr-title-outer">
+        <div class="hdr-title-icon">
+          <span>
+            <img src="images/mic.svg" alt="">
+          </span>
+        </div>
+        <span class="hdr-title">Record A Question</span>
+      </a>
+      
+      <ul class="c-header-nav ms-auto">
+        <!-- <li class="c-header-item">
+          <a href="#">
+            <img src="images/mail.svg" alt=""/>
+            <span class="nav_bdg grn"></span>
+          </a>
+        </li> -->
+
+        <li class="dropdown c-dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0);">
+          <span class="c-avatar"><img class="c-avatar-img" src="images/avatar-img.svg" alt=""></span>
+         
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-menu-top-otr">
+                <div class="dropdown-menu-top">
+                   <figure class="c-avatar-img">
+                       <img src="images/profile-demo-img.jpg" alt="" />
+                       <span></span>
+                    </figure>   
+                   <div class="pr-dtl">
+                       <h4>Ryan Smith</h4>
+                       <p>Active</p>
+                   </div> 
+                </div>  
+                <!-- <form>
+                    <textarea class="form-control" placeholder="Set a status..."></textarea>
+                </form> -->
+                <ul class="settings-innr">
+                    <li>
+                        <a href="#"><em><img src="images/drop-icon1.svg" alt=""/></em> Account Settings</a>   
+                        <span><img src="images/drop-icon4.svg" alt=""/> A</span>
+                    </li>
+                    <li>
+                        <a href="#"><em><img src="images/drop-icon2.svg" alt=""/></em> Show Profile</a>   
+                        <span><img src="images/drop-icon4.svg" alt=""/> P</span>
+                    </li>
+                </ul>
+            </div>
+              <a href="#" class="drop-logout"><em><img src="images/drop-icon3.svg" alt=""/></em> Sign Out</a>   
+          </div>
+      </li>
+
+        <li class="c-header-item dropdown c-dropdown">
+          <a href="javascript:void(0);" data-bs-toggle="dropdown" class="dropdown-toggle">
+            <img src="images/notification-icon.svg" alt=""/>
+            <span class="nav_bdg blw">24</span>
+          </a>
+          <div class="dropdown-menu left notify-dropdown-menu">
+              <div class="notify-dropdown-top">
+                 <h4>Activity</h4>   
+                 <span>3</span> 
+              </div>
+              <ul class="notify-dropdown-list">
+                  <li class="dropdown dropleft">
+                    <a href="javascript:void(0);" class="notify-dropdown-menu dropdown-toggle sub-toggle" data-bs-toggle="dropdown">
+                          <div class="notify-dropdown-menu-lft">
+                              <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                              <div class="notify-dropdown-txt">
+                                  <h4>Event starting soon</h4>  
+                                  <p>Conference one</p>
+                              </div>
+                          </div>
+                          <span>1 min ago</span>
+                     </a>
+                     <div class="dropdown-menu notify-dropdown-menu">
+                         <div class="notify-dropdown-top">
+                             <h4>James smith</h4>   
+                         </div>
+                         <ul class="notify-dropdown-list">
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><span><img src="images/profile-demo-img.jpg" alt=""/></span></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                      <a href="#">+12</a>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                                                               
+                                    <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <em class="volume-wd"><img src="images/mike.svg" alt=""/></em>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                          <a href="#">+12</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                         </ul>
+                     </div>
+                  </li>   
+                  <li class="dropdown dropleft">
+                    <a href="javascript:void(0);" class="notify-dropdown-menu  dropdown-toggle sub-toggle" data-bs-toggle="dropdown">
+                          <div class="notify-dropdown-menu-lft">
+                              <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                              <div class="notify-dropdown-txt">
+                                  <h4>CPD points issued</h4>  
+                                  <p>Conference one</p>
+                              </div>
+                          </div>
+                          <span>3 min ago</span>
+                      </a>
+                    <div class="dropdown-menu notify-dropdown-menu">
+                         <div class="notify-dropdown-top">
+                             <h4>James smith</h4>   
+                         </div>
+                         <ul class="notify-dropdown-list">
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><span><img src="images/profile-demo-img.jpg" alt=""/></span></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                      <a href="#">+12</a>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                                                               
+                                    <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <em class="volume-wd"><img src="images/mike.svg" alt=""/></em>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                          <a href="#">+12</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                         </ul>
+                     </div>
+                 </li>   
+                  <li class="dropdown dropleft">
+                    <a href="javascript:void(0);" class="notify-dropdown-menu dropdown-toggle sub-toggle" data-bs-toggle="dropdown">
+                          <div class="notify-dropdown-menu-lft">
+                              <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                              <div class="notify-dropdown-txt">
+                                  <h4>James would like to connect</h4>  
+                                  <p>James smith</p>
+                              </div>
+                          </div>
+                          <span>5 min ago</span>
+                      </a>
+                      <div class="dropdown-menu notify-dropdown-menu">
+                         <div class="notify-dropdown-top">
+                             <h4>James smith</h4>   
+                         </div>
+                         <ul class="notify-dropdown-list">
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><span><img src="images/profile-demo-img.jpg" alt=""/></span></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                      <a href="#">+12</a>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                                                               
+                                    <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <em class="volume-wd"><img src="images/mike.svg" alt=""/></em>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                          <a href="#">+12</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                         </ul>
+                     </div>
+                 </li>   
+                  <li class="dropdown dropleft">
+                    <a href="javascript:void(0);" class="notify-dropdown-menu dropdown-toggle sub-toggle" data-bs-toggle="dropdown">
+                          <div class="notify-dropdown-menu-lft">
+                              <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                              <div class="notify-dropdown-txt">
+                                  <h4>James has messaged you</h4>  
+                                  <p>James smith</p>
+                              </div>
+                          </div>
+                          <span>5 min ago</span>
+                      </a>
+                      <div class="dropdown-menu notify-dropdown-menu">
+                         <div class="notify-dropdown-top">
+                             <h4>James smith</h4>   
+                         </div>
+                         <ul class="notify-dropdown-list">
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><span><img src="images/profile-demo-img.jpg" alt=""/></span></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                     <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                  </div>
+                                                  <div class="drp-image-innr">
+                                                      <a href="#">+12</a>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                                                               
+                                    <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <em class="volume-wd"><img src="images/mike.svg" alt=""/></em>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                              <li>
+                                 <div class="sub-list">
+                                      <div class="notify-dropdown-menu-lft">
+                                          <figure><img src="images/profile-demo-img.jpg" alt=""/></figure>
+                                          <div class="notify-dropdown-txt">
+                                              <h4>James smith</h4>  
+                                              <p>Add 2 photos 10 new album</p>
+                                              <div class="drp-image-outr">
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im1.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im2.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                         <figure><img src="images/im3.jpg" alt=""/></figure>   
+                                                      </div>
+                                                      <div class="drp-image-innr">
+                                                          <a href="#">+12</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <span>1 min ago</span>
+                                  </div>
+                             </li>   
+                         </ul>
+                     </div>
+                 </li>   
+              </ul>
+          </div>
+        </li>
+          
+
+          
+          
+      </ul>
+ 
+    </header>
+
+    <div class="c-body">
+      <main class="c-main">
+        <div class="container-fluid">
+         <div class="select-sec">
+          <div class="select-header">
+            <p class="blue-span">Step 1</p>
+            <h6><span><img src="images/select-icon.svg" alt=""></span>
+              Select a category?</h6>
+          </div>
+          <div class="select-content">
+            <div class="select-list-wrapper">
+              <ul class="select-list">
+                <li> 
+                  <div class="form_input_check input-select1">
+                    <label>
+                      <input type="checkbox" class="cb-value1" />
+                    <span> Achievements</span>
+                  </label>
+                 
+                </div>
+              </li>
+              <li> 
+                <div class="form_input_check input-select1">
+                  <label>
+                    <input type="checkbox" class="cb-value1" />
+                  <span>
+                    Political Views</span
+                  >
+                </label>
+               
+              </div>
+            </li>
+            <li> 
+              <div class="form_input_check input-select1">
+                <label>
+                  <input type="checkbox" class="cb-value1" />
+                <span>
+                  Strengths</span
+                >
+              </label>
+             
+            </div>
+          </li>
+          <li> 
+            <div class="form_input_check input-select1">
+              <label>
+                <input type="checkbox" class="cb-value1" />
+              <span>
+                My full life story</span
+              >
+            </label>
+           
+          </div>
+        </li>
+        <li> 
+          <div class="form_input_check input-select1">
+            <label>
+              <input type="checkbox" class="cb-value1" />
+            <span>
+              Experiences</span
+            >
+          </label>
+         
+        </div>
+      </li>
+      <li> 
+        <div class="form_input_check input-select1">
+          <label>
+            <input type="checkbox" class="cb-value1" />
+          <span>
+            Faith</span
+          >
+        </label>
+       
+      </div>
+    </li>
+    <li> 
+      <div class="form_input_check input-select1">
+        <label>
+          <input type="checkbox" class="cb-value1" />
+        <span>
+          Doubts and Fears</span
+        >
+      </label>
+     
+    </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Passions</span
+      >
+    </label>
+   
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Defining moments</span
+      >
+    </label>
+   
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Morality</span
+      >
+    </label>
+   
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Talents</span
+      >
+    </label>
+   
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Weaknesses</span
+      >
+    </label>
+   
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Achievements</span
+      >
+    </label>
+   
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+    <span>
+      Political Views</span
+    >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+    Strengths</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  My full life story</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Experiences</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Faith</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Doubts and Fears</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Passions</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Defining moments</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Morality</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Talents</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+  <span>
+  Weaknesses</span
+  >
+  </label>
+  
+  </div>
+  </li>
+  
+              </ul>
+            </div>
+         
+          </div>
+         </div>
+         <div class="select-sec-btm">
+          <h6>selects 1 of <span class="black-span">35</span> categories</h6>
+          <p>Interviewer may configure by drag to top <span class="black-span">highest priority top</span></p>
+         </div>
+         <div class="select-sec for-topic">
+          <div class="select-header">
+         
+            <h6><span><img src="images/select-icon2.svg" alt=""></span>
+              Select a Topic?</h6>
+          </div>
+          <div class="select-content ">
+            <div class="select-list-wrapper">
+              <ul class="select-list">
+                <li> 
+                  <div class="form_input_check input-select1">
+                    <label>
+                      <input type="checkbox" class="cb-value1" />
+                    <span>
+                      Career</span
+                    >
+                  </label>
+                 
+                </div>
+              </li>
+              <li> 
+                <div class="form_input_check input-select1">
+                  <label>
+                    <input type="checkbox" class="cb-value1" />
+                  <span>
+                    Academic</span
+                  >
+                </label>
+               
+              </div>
+            </li>
+            <li> 
+              <div class="form_input_check input-select1">
+                <label>
+                  <input type="checkbox" class="cb-value1" />
+                <span>
+                  Health</span
+                >
+              </label>
+             
+            </div>
+          </li>          
+          <li> 
+            <div class="form_input_check input-select1">
+              <label>
+                <input type="checkbox" class="cb-value1" />
+              <span>
+                Education</span
+              >
+            </label>
+           
+          </div>
+        </li>
+        <li> 
+          <div class="form_input_check input-select1">
+            <label>
+              <input type="checkbox" class="cb-value1" />
+            <span>
+              Spiritual</span
+            >
+          </label>
+         
+        </div>
+      </li>
+      <li> 
+        <div class="form_input_check input-select1">
+          <label>
+            <input type="checkbox" class="cb-value1" />
+          <span>
+            Militarily</span
+          >
+        </label>
+       
+      </div>
+    </li> 
+    <li> 
+      <div class="form_input_check input-select1 ">
+        <label>
+          <input type="checkbox" class="cb-value1" />
+        <span>
+          Sports</span
+        >
+      </label>
+     
+    </div>
+  </li>
+  <li> 
+    <div class="form_input_check input-select1">
+      <label>
+        <input type="checkbox" class="cb-value1" />
+      <span>
+        Political</span
+      >
+    </label>
+   
+  </div>
+</li>
+              </ul>
+            </div>
+         
+          </div>
+         </div>
+         <div class="select-sec-btm">
+          <h6>Select form numerous <span class="black-span">topics</span></h6>
+           
+          <p>Interviewer may configure by drag to top <span class="black-span">highest priority top</span></p>
+         </div>
+         <div class="select-sec for-topic">
+          <div class="select-header">
+         
+            <h6><span><img src="images/select-icon3.svg" alt=""></span>
+              Degree of Complexity</h6>
+          </div>
+          <div class="select-content ">
+            <div class="select-list-wrapper">
+              <ul class="select-list select-list3">
+                <li> 
+                  <div class="form_input_check input-select1">
+                    <label>
+                      <input type="checkbox" class="cb-value1" />
+                    <span>
+                      Simple</span
+                    >
+                  </label>
+                 
+                </div>
+              </li>
+              <li> 
+                <div class="form_input_check input-select1">
+                  <label>
+                    <input type="checkbox" class="cb-value1" />
+                  <span>
+                    Easy</span
+                  >
+                </label>
+               
+              </div>
+            </li>
+            <li> 
+              <div class="form_input_check input-select1">
+                <label>
+                  <input type="checkbox" class="cb-value1" />
+                <span>
+                  General</span
+                >
+              </label>
+             
+            </div>
+          </li>          
+          <li> 
+            <div class="form_input_check input-select1">
+              <label>
+                <input type="checkbox" class="cb-value1" />
+              <span>
+                Complex</span
+              >
+            </label>
+           
+          </div>
+        </li>
+        <li> 
+          <div class="form_input_check input-select1">
+            <label>
+              <input type="checkbox" class="cb-value1" />
+            <span>
+              Hard</span
+            >
+          </label>
+         
+        </div>
+      </li>
+              </ul>
+            </div>
+         
+          </div>
+         </div>
+         <div class="cmn-btn-for-dashboard select-sec-btn">
+          <a href="interviewer-dashboard-question.html" class="btn">Continue</a>
+         </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js" ></script>
+  <script src="js/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/common.js"></script>
+  
+</body>
+</html>
