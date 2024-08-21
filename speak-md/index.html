@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+
+    <!-- fabicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- All CSS -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="upload_popup" style="display:none" id="upload-popup">
+        <div class="upload_popup_header">
+            <h4>Upload your <span> document</span></h4>
+        </div>
+        <div class="upload_form_wrapper">
+            <form>
+                <div class="row upload_form_row">
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="f_name">First Name*</label>
+                            <input type="text" id="f_name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="l_name">Last Name*</label>
+                            <input type="text" id="l_name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" required id="phone">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 upload_form_col">
+                        <div class="form_group">
+                            <label for="service">Service</label>
+                            <select name="service" id="service">
+                                <option value="">Medical Document Translation</option>
+                                <option value="">Operative Report Translation</option>
+                                <option value="">X-ray, CT and MRI Translation</option>
+                                <option value="">EOB translation</option>
+                                <option value="">Doctors Notes Translation</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 upload_form_col">
+                        <div class="form_group">
+                            <div class="custom_file_wrap">
+                                <input type="file" class="custom_upload_fil_sec_file">
+                                <div class="custom_file_up_btn">
+                                    <i class="up_icon"><img src="images/upload-btn-green.svg" alt=""></i>
+                                    
+                                    <span class="custom_file_up_txt">Upload your File Here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 upload_form_col">
+                        <div class="form_group form_grouppayment">                                                       
+                            <input type="submit" value="Make Payment">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header class="main-head">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+            
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
+                  <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="stick"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="stick"></span>
+                    </button>
+                    <ul class="navbar-nav ms-auto">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How it works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                   
+                  </div>
+
+                  <div class="header_right_sec">
+                    <a href="#url" class="login_dv">
+                        <img src="images/u_user.svg" alt="">
+                        <span>Login</span>
+                    </a>
+                    <!-- <div class="custom_file_wrap">
+                        <input type="file" class="custom_upload_fil_sec_file">
+                        <div class="custom_file_up_btn">
+                            <img src="images/upload-btn-green.svg" alt="" class="up_icon">
+                            <span class="custom_file_up_txt">Upload Now</span>
+                        </div>
+                    </div> -->
+
+                    <a href="#" class="outline_btn" data-fancybox="" data-src="#upload-popup" data-touch="false"><img src="images/upload-btn-green.svg" alt="">Upload Now</a>
+                </div>
+                
+            </nav>
+
+        </div>
+
+
+        <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+    </header>
+
+
+   <div class="banner home_banner">
+        <figure class="banner_left_tree">
+            <img src="images/banner-left-tree.png" alt="">
+        </figure>
+
+
+        <div class="container">
+            <div class="banner_inner">
+                <div class="row banner_row">
+                    <div class="col-lg-5 col-12 banner_col_left">
+                        <div class="banner_left_dv">
+                            <h1>Doctors Helping <span class="h1_hglght">Patients Translate</span> <span class="h1_sm_txt">the World of Healthcare</span></h1>
+
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+
+                            <div class="banner_btn_dv">
+                                <a href="#url" class="cmn_btn"><img src="images/right-arrow.svg" alt=""><span>Get Started</span></a>
+                                <!-- <a href="#url" class="outline_btn"><img src="images/upload-btn-green.svg" alt=""><span>Upload Now</span></a> -->
+
+                                <a href="#" class="outline_btn" data-fancybox="" data-src="#upload-popup" data-touch="false"><img src="images/upload-btn-green.svg" alt="">Upload Now</a>
+
+                                <!-- <div class="custom_file_wrap">
+                                    <input type="file" class="custom_upload_fil_sec_file">
+                                    <div class="custom_file_up_btn">
+                                        <img src="images/upload-btn-green.svg" alt="" class="up_icon">
+                                        <span class="custom_file_up_txt">Upload Now</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12 banner_col_right">
+                        <div class="banner_right_dv">
+                            <img src="images/banner-right-img.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <figure class="banner_btm_shape">
+                    <div class="banner_btm_shape_inner">
+                        <span class="points up_item">Upload Items</span>
+                        <span class="points tra_med">translate Medical Records</span>
+                        <span class="points paymnt">Payment</span>
+                        <span class="points download">Download File</span>
+
+                        <span class="indi_arrow"><img src="images/indicator-arrow.svg" alt=""></span>
+                        <span class="indi_arrow indi_arrow2"><img src="images/indicator-arrow2.svg" alt=""></span>
+                        <span class="indi_arrow indi_arrow3"><img src="images/indicator-arrow3.svg" alt=""></span>
+                        <span class="indi_arrow indi_arrow4"><img src="images/indicator-arrow4.svg" alt=""></span>
+                    </div>
+                    <img src="images/banner-btm-shape.svg" alt="">
+                </figure>
+
+                <ul class="mob_flowchart_list">
+                    <li>Upload Items</li>
+                    <li>Translate Medical Records</li>
+                    <li>Payment</li>
+                    <li>Download File</li>
+                </ul>
+
+                <div class="banner_slider">
+                    <div class="banner_slider_item">
+                        <div class="banner_slider_box">
+                            <div class="bs_left_tag" style="background-color: rgba(21, 182, 184, 0.2)">
+                                <img src="images/bs_icon1.svg" alt="">
+                            </div>
+
+                            <div class="bs_content">
+                                <h4>Medical Document Translation</h4>
+                                <p>Every doctor’s visit, surgery and inpatient hospitalization is recorded on an ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner_slider_item">
+                        <div class="banner_slider_box">
+                            <div class="bs_left_tag" style="background-color: rgba(29, 117, 184, 0.2);">
+                                <img src="images/bs_icon2.svg" alt="">
+                            </div>
+
+                            <div class="bs_content">
+                                <h4>Operative Report Translation</h4>
+                                <p>It is a long established fact that a reader will be Lorem by the readable...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner_slider_item">
+                        <div class="banner_slider_box">
+                            <div class="bs_left_tag" style="background-color: rgba(238, 97, 97, 0.2)">
+                                <img src="images/bs_icon3.svg" alt="">
+                            </div>
+
+                            <div class="bs_content">
+                                <h4>X-ray, CT and MRI Translation</h4>
+                                <p>It is a long established fact that a reader will be Lorem by the readable...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner_slider_item">
+                        <div class="banner_slider_box">
+                            <div class="bs_left_tag" style="background-color: rgba(21, 182, 184, 0.2)">
+                                <img src="images/bs_icon1.svg" alt="">
+                            </div>
+
+                            <div class="bs_content">
+                                <h4>Medical Document Translation</h4>
+                                <p>Every doctor’s visit, surgery and inpatient hospitalization is recorded on an ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner_slider_item">
+                        <div class="banner_slider_box">
+                            <div class="bs_left_tag" style="background-color: rgba(29, 117, 184, 0.2);">
+                                <img src="images/bs_icon2.svg" alt="">
+                            </div>
+
+                            <div class="bs_content">
+                                <h4>Medical Document Translation</h4>
+                                <p>Every doctor’s visit, surgery and inpatient hospitalization is recorded on an ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner_slider_item">
+                        <div class="banner_slider_box">
+                            <div class="bs_left_tag" style="background-color: rgba(238, 97, 97, 0.2)">
+                                <img src="images/bs_icon3.svg" alt="">
+                            </div>
+
+                            <div class="bs_content">
+                                <h4>Medical Document Translation</h4>
+                                <p>Every doctor’s visit, surgery and inpatient hospitalization is recorded on an ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <div class="speakmed_section cmn_gap">
+        <div class="container">
+            <div class="row speakmd_row">
+                <div class="col-md-6 col-12 speakmd_col">
+                    <div class="speakmd_left_box">
+                        <img src="images/speakmd_left_img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 speakmd_col">
+                    <div class="speakmd_right_box">
+                        <div class="cmn_header">
+                            <h2><span>Welcome to</span> SpeakMD!</h2>
+                            <p>SpeakMD is a group of highly qualified physicians that understand the complex world of medicine can be overwhelming and confusing for patients struggling at their time of sickness and injury.  Our Mission is to provide patients with as much information as possible to empower them on their path to recovery.  We do this by translating patient’s own medical documents into language that every patient can understand so they can better navigate the healthcare system and improve their health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="translation_section">
+        <figure class="translation_rght_img">
+            <img src="images/translation-rght-img.png" alt="">
+        </figure>
+
+        <div class="container">
+            <div class="cmn_header">
+                <h2><span>See Our </span> Translation Videos</h2>
+            </div>
+        </div>
+        <div class="translation_slider_wrapper">
+            <div class="translation_slider">
+                <div class="translation_item">
+                    <div class="translation_box">
+                        <figure class="translation_video_img">
+                            <img src="images/Translation_img1.jpg" alt="">
+                            <a data-fancybox href="https://youtu.be/K4TOrB7at0Y" class="play_icon"><img src="images/u_play.svg" alt=""></a>
+                        </figure>
+                        <h5>Sample Operative Note Translation Video</h5>
+                    </div>
+                </div>
+    
+                <div class="translation_item">
+                    <div class="translation_box">
+                        <figure class="translation_video_img">
+                            <img src="images/Translation_img1.jpg" alt="">
+    
+                           <a data-fancybox href="https://youtu.be/K4TOrB7at0Y" class="play_icon"><img src="images/u_play.svg" alt=""></a>
+                        </figure>
+                        <h5>Sample Explanation of Benefits Translation Video </h5>
+                    </div>
+                </div>
+    
+                <div class="translation_item">
+                    <div class="translation_box">
+                        <figure class="translation_video_img">
+                            <img src="images/Translation_img2.jpg" alt="">
+    
+                           <a data-fancybox href="https://youtu.be/K4TOrB7at0Y" class="play_icon"><img src="images/u_play.svg" alt=""></a>
+                        </figure>
+                        <h5>Sample Operative Note Translation Video</h5>
+                    </div>
+                </div>
+    
+                <div class="translation_item">
+                    <div class="translation_box">
+                        <figure class="translation_video_img">
+                            <img src="images/Translation_img3.jpg" alt="">
+    
+                           <a data-fancybox href="https://youtu.be/K4TOrB7at0Y" class="play_icon"><img src="images/u_play.svg" alt=""></a>
+                        </figure>
+                        <h5>Sample Explanation of Benefits Translation Video</h5>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="services_section cmn_gap">
+        <div class="container">
+            <div class="row services_row">
+                <div class="col-md-5 col-12 services_col">
+                    <div class="cmn_header">
+                        <h2><span>Our</span>Services</h2>
+                        <p>SpeakMD is, at its core, doctors helping patients.  Our physicians took an oath to help and protect patients.  We feel this is a way to get back to our original calling to medicine while protecting our patients from the complex healthcare system.  As more of medicine is shifted to patients managing their own healthcare, we are determined to help patients better understand the medical speak and confusing concepts associated with their health.</p>
+                        <a href="services.html" class="cmn_btn"><img src="images/right-arrow.svg" alt=""><span>View Services</span></a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12 services_col">
+                    <div class="services_rght_box">
+                        <img src="images/service_img.png" alt="">
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial_section cmn_gap pt-0">
+        <div class="container">
+           
+            <div class="testimonial_section_inner">
+                <figure class="testimonial_img">
+                    <img src="images/testimonial_img.png" alt="">
+                </figure>
+
+                <figure class="testimonial_img2">
+                    <img src="images/testimonial_img2.png" alt="">
+                </figure>
+    
+                <div class="cmn_header">
+                    <h2><span>Our Client’s </span> Testimonial</h2>
+                </div>
+
+                <div class="testiminial_slider">
+                    <div class="testiminial_item">
+                        <div class="testiminial_box">
+                            <figure class="testimonial_sl_img">
+                                <img src="images/testimonial_sl_img4.png" alt="">
+                                <span class="testimonial_sl_img_icn"><img src="images/testimonial_sl_icon.svg" alt=""></span>
+                            </figure>
+
+                            <!-- <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="testiminial_item">
+                        <div class="testiminial_box">
+                            <figure class="testimonial_sl_img">
+                                <img src="images/testimonial_sl_img2.png" alt="">
+                                <span class="testimonial_sl_img_icn"><img src="images/testimonial_sl_icon.svg" alt=""></span>
+                            </figure>
+
+                            <!-- <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="testiminial_item">
+                        <div class="testiminial_box">
+                            <figure class="testimonial_sl_img">
+                                <img src="images/testimonial_sl_img1.png" alt="">
+                                <span class="testimonial_sl_img_icn"><img src="images/testimonial_sl_icon.svg" alt=""></span>
+                            </figure>
+
+                            <!-- <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="testiminial_item">
+                        <div class="testiminial_box">
+                            <figure class="testimonial_sl_img">
+                                <img src="images/testimonial_sl_img3.png" alt="">
+                                <span class="testimonial_sl_img_icn"><img src="images/testimonial_sl_icon.svg" alt=""></span>
+                            </figure>
+
+                            <!-- <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="testiminial_item">
+                        <div class="testiminial_box">
+                            <figure class="testimonial_sl_img">
+                                <img src="images/testimonial_sl_img5.png" alt="">
+                                <span class="testimonial_sl_img_icn"><img src="images/testimonial_sl_icon.svg" alt=""></span>
+                            </figure>
+
+                            <!-- <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <div class="testiminial_item">
+                        <div class="testiminial_box">
+                            <figure class="testimonial_sl_img">
+                                <img src="images/testimonial_sl_img4.png" alt="">
+                                <span class="testimonial_sl_img_icn"><img src="images/testimonial_sl_icon.svg" alt=""></span>
+                            </figure>
+
+                            <!-- <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testiminial_quote_slider">
+                    <div class="testiminial_qs_item">
+                        <div class="testiminial_qs_box">
+                            <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testiminial_qs_item">
+                        <div class="testiminial_qs_box">
+                            <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testiminial_qs_item">
+                        <div class="testiminial_qs_box">
+                            <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testiminial_qs_item">
+                        <div class="testiminial_qs_box">
+                            <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testiminial_qs_item">
+                        <div class="testiminial_qs_box">
+                            <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testiminial_qs_item">
+                        <div class="testiminial_qs_box">
+                            <div class="testimonial_content">
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <p class="cl_quote">“I learned so much about what was done during my surgery.  The translation was easy to follow and understand. “</p>
+                                <h6 class="cl_name">J.H.</h6>
+                                <p class="cl_occ">EDUCATED PATIENT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog_section cmn_gap pt-0">
+        <div class="container">
+            <div class="cmn_header cmn_header_flex">
+                <h2><span>Recent</span>Blogs</h2>
+                <a href="#url" class="cmn_btn"><img src="images/right-arrow.svg" alt=""><span>View All</span></a>
+            </div>
+
+            <div class="row blog_row">
+                <div class="col-lg-4 col-md-6 blog_col">
+                    <div class="blog_card">
+                        <span class="new_tag">NEW</span>
+                        <a href="#url" class="blog_img">
+                            <img src="images/blog_img1.jpg" alt="">
+                        </a>
+                        <div class="blog_content">
+                            <span class="blog_published_date">July 25, 2017</span>
+                            <h4 class="blog_title"><a href="#">Tip #2 When to Schedule Your Appointment</a></h4>
+                            <p class="blog_short_text">Lets be honest, no one likes sitting in a doctor’s waiting room.  There is a million other places you...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 blog_col">
+                    <div class="blog_card">
+                        <span class="new_tag">NEW</span>
+                        <a href="#url" class="blog_img">
+                            <img src="images/blog_img2.jpg" alt="">
+                        </a>
+                        <div class="blog_content">
+                            <span class="blog_published_date">July 7, 2017</span>
+                            <h4 class="blog_title"><a href="#">A doctors guide to getting the most out of your...</a></h4>
+                            <p class="blog_short_text">LWith the amount of patients a physician has to see during the day, the one thing you can count on is ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 blog_col">
+                    <div class="blog_card">
+                        <span class="new_tag">NEW</span>
+                        <a href="#url" class="blog_img">
+                            <img src="images/blog_img3.jpg" alt="">
+                        </a>
+                        <div class="blog_content">
+                            <span class="blog_published_date">July 25, 2017</span>
+                            <h4 class="blog_title"><a href="#">Tip #2 When to Schedule Your Appointment</a></h4>
+                            <p class="blog_short_text">Lets be honest, no one likes sitting in a doctor’s waiting room.  There is a million other places you...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer_main">
+        <div class="footer_top">  
+            
+            <figure class="footer_arrow">
+                <img src="images/footer_arrow-shape.png" alt="">
+            </figure>
+            <div class="container">
+                <div class="footer_top_inner">
+                    <figure class="footer_top_img">
+                        <img src="images/footer_top_img.png" alt="">
+                    </figure>
+                    <div class="footer_top_row row">
+                        <div class="col-sm-6 footer_top_col_left">
+                            <div class="cmn_header">
+                                <h2><span>Have questions? </span>Send us an Email.</h2>
+                                <a href="contact.html" class="cmn_btn white_outline_btn"><img src="images/right-arrow.svg" alt=""><span>Contact Us</span></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 footer_top_col_right">
+                            <figure class="footer_top_rght_img">
+                                <img src="images/footer-top-right-img.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <div class="container">
+                <div class="footer_middle_inner">
+                    <a href="index.html" class="footer_logo"><img src="images/logo.svg" alt=""></a>
+                    <ul class="footer_nav_list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How it works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <ul class="social_media_list">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <p class="copyright">Copyright © 2022 <a href="index.html">SpeakMD</a>,  All rights reserved</p>
+            </div>            
+        </div>
+    </footer>
+
+   
+
+    <span id="scroll" style="display: none;"><img src="images/u_angle-right.svg" alt=""></span>
+
+
+
+    
+    <!-- Jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

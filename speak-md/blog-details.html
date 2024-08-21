@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blog</title>
+
+    <!-- fabicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- All CSS -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="upload_popup" style="display:none" id="upload-popup">
+        <div class="upload_popup_header">
+            <h4>Upload your <span> document</span></h4>
+        </div>
+        <div class="upload_form_wrapper">
+            <form>
+                <div class="row upload_form_row">
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="f_name">First Name*</label>
+                            <input type="text" id="f_name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="l_name">Last Name*</label>
+                            <input type="text" id="l_name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 upload_form_col">
+                        <div class="form_group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" required id="phone">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 upload_form_col">
+                        <div class="form_group">
+                            <label for="service">Service </label>
+                            <select name="service" id="service">
+                                <option value="">Medical Document Translation</option>
+                                <option value="">Operative Report Translation</option>
+                                <option value="">X-ray, CT and MRI Translation</option>
+                                <option value="">EOB translation</option>
+                                <option value="">Doctors Notes Translation</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 upload_form_col">
+                        <div class="form_group">
+                            <div class="custom_file_wrap">
+                                <input type="file" class="custom_upload_fil_sec_file">
+                                <div class="custom_file_up_btn">
+                                    <i class="up_icon"><img src="images/upload-btn-green.svg" alt=""></i>
+                                    
+                                    <span class="custom_file_up_txt">Upload your File Here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 upload_form_col">
+                        <div class="form_group form_grouppayment">                                                       
+                            <input type="submit" value="Make Payment">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header class="main-head">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+            
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
+                  <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="stick"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="stick"></span>
+                    </button>
+                    <ul class="navbar-nav ms-auto">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How it works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li class="current-menu-item"><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                   
+                  </div>
+
+                  <div class="header_right_sec">
+                    <a href="#url" class="login_dv">
+                        <img src="images/u_user.svg" alt="">
+                        <span>Login</span>
+                    </a>
+                    <!-- <div class="custom_file_wrap">
+                        <input type="file" class="custom_upload_fil_sec_file">
+                        <div class="custom_file_up_btn">
+                            <img src="images/upload-btn-green.svg" alt="" class="up_icon">
+                            <span class="custom_file_up_txt">Upload Now</span>
+                        </div>
+                    </div> -->
+
+                    <a href="#" class="outline_btn" data-fancybox="" data-src="#upload-popup" data-touch="false"><img src="images/upload-btn-green.svg" alt="">Upload Now</a>
+                </div>
+                
+            </nav>
+
+        </div>
+
+
+        <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+    </header>
+
+    <div class="banner inner_page_banner blog_details_banner">
+        <div class="blog_banner_inner">
+             
+            <div class="container">
+                <div class="blog_details_content">
+                    <img src="images/blog-details-img.jpg" alt="" class="blog_details_img">
+
+                    <h4>Tip #2 When to Schedule Your Appointment</h4>
+                    <p class="blog_date"><img src="images/calender-icon.svg" alt="" class="cal_icon"> <span>July 25, 2017 BY speakmd</span></p>
+                    <p>Lets be honest, no one likes sitting in a doctor’s waiting room.  There is a million other places you would rather be.  Please understand as physicians, we hate when our patient’s wait.  It puts them in a bad mood, they cause problems for our staff and it hurts our idea of an efficient practice.</p>
+                    <p>One other point, as late as a doctor is running, I can garuntee you he or she is not checking facebook or enjoying a break in the back.  There is no such thing a a break during a doctors office day.  They are working hard to get to you, while still helping the patients before you.</p>
+                    <p>None of this is meant to justify rude or unhelpful staff or physicians. In that situation, simply go see a different doctor.</p>
+                    <p>Many patients argue that the office needs to plan better to avoid delays.   Please understand many offices are dealing with very sick or injured patients.  Every patient requires a different level of explanation and hand holding.  There is absolutely no way to time and plan for this.  Believe us many business consultants have tried and failed.</p>
+                    <p>Here is an example, earlier today we had patient with a cancer diagnosis who needed to leave for a business meeting. appointment time 5 minutes.  The following appointment was with a patient with low back pain for 12 years that had no new increase or decrease in pain.  The patient requested a run down of all the treatment options and potential side effects  for the 3rd straight appointment. Appointment time 35minutes.</p>
+                    <p>Now if you were to plan for appointment times who would you have given more time to? The cancer patient or the  back pain patient? That is why doctors appointments run late. If a doctor cares and wants to treat his patients the right way, there will be delays on some of your appointments.</p>
+                    <p>With that being said, there are good times to schedule your appointment to ensure a timely appointment.</p>
+
+                    <img src="images/blog-details-img2.jpg" alt="" class="blog_details_img_full">
+
+                    <ul class="blog_details_list">
+                        <li><span>1st -</span> try to schedule at the first appointment slot in the morning or afternoon.  this is usually around 8 or 9am depending on when the doctor begins seeing patients.  A little known fact is a doctor will have a “first” afternoon appointment slot after lunch as well. usually around 1pm.  It doesn’t hurt to ask the receptionist scheduling your appointment when the “first starts” are and schedule accordingly.</li>
+                        <li>This first appointment doesn’t garuntee an on time start but just like the first flight out of a city, the chances of being delayed are diminished.  All doctors get tired during office days, that first appointment you will most likely catch your doctor at the most attentive and energetic.</li>
+                        <li><span>2nd -</span> make sure you give the scheduler all the information that is requested over the phone.  Be as specific as to your exact condition.  If there are multiple doctors in an office, one may specialize in the exact problem your are having. This prevents you from being “bounced” around to different doctors.</li>
+                        <li><span>3rd -</span>  Ask if you can fill out forms before coming to the appointment. These are often available online .</li>
+                        <li><span>4th -</span> Bring a book or your ipad.  More and more doctors offices are wifi accessible to ensure their patients are connected.</li>
+                        <li><span>5th -</span> Be polite to the staff and nurses.  Doctors absolutely understand how frustrating waiting for an appointment can be. Believe it or not we are patients, spouses and parents of patients, all the time.  No one person’s time is more important than another.  Although the front desk staff and nurses take the brunt of patient frustrations, the doctor will definitely hear about unruly or rude patients without exception.  For many doctors their staff is their work family, if the family is mistreated you will automatically be treated in a guarded and closed off manner by your doctor.</li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer_main">
+        <div class="footer_top">  
+            
+            <figure class="footer_arrow">
+                <img src="images/footer_arrow-shape.png" alt="">
+            </figure>
+            <div class="container">
+                <div class="footer_top_inner">
+                    <figure class="footer_top_img">
+                        <img src="images/footer_top_img.png" alt="">
+                    </figure>
+                    <div class="footer_top_row row">
+                        <div class="col-sm-6 footer_top_col_left">
+                            <div class="cmn_header">
+                                <h2><span>Have questions? </span>Send us an Email.</h2>
+                                <a href="contact.html" class="cmn_btn white_outline_btn"><img src="images/right-arrow.svg" alt=""><span>Contact Us</span></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 footer_top_col_right">
+                            <figure class="footer_top_rght_img">
+                                <img src="images/footer-top-right-img.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <div class="container">
+                <div class="footer_middle_inner">
+                    <a href="index.html" class="footer_logo"><img src="images/logo.svg" alt=""></a>
+                    <ul class="footer_nav_list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How it works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li class="current-menu-item"><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <ul class="social_media_list">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <p class="copyright">Copyright © 2022 <a href="index.html">SpeakMD</a>,  All rights reserved</p>
+            </div>            
+        </div>
+    </footer>
+
+   
+
+    <span id="scroll" style="display: none;"><img src="images/u_angle-right.svg" alt=""></span>
+
+    
+    <!-- Jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
